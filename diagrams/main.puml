@@ -1,0 +1,17 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+Main -> Moped: Start fly
+==Flying loop==
+Moped -> Moped: Flying
+Moped -> Hints_Layer: Show hints layer (position, speed, etc)
+==Shooting==
+User --> Moped: Shooting (aim coordinates)
+Moped -> Moped: Calculate shooting result
+Moped -> Hints_Layer: Show shooting result
+==End of flying loop==
+Moped -> Main: Stop fly
+Moped -> Main: Save result
+@enduml
