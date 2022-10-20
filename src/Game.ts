@@ -20,7 +20,7 @@ export class Game {
             this.aim.moveTo(event.clientX, event.clientY)
         })
         document.addEventListener("click", (event) => {
-            this.aim.shoot()
+            this.aim.shoot(event.clientX, event.clientY)
         })
     }
 

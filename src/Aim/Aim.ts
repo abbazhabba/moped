@@ -12,7 +12,7 @@ export class Aim {
     moveTo(x: number, y: number) {
         this.view.moveTo(x,y)
     }
-    shoot() {
-
+    shoot(x:number, y:number) {
+        console.log("boom ",x,y)
     }
 }
